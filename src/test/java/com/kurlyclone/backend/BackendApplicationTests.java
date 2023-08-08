@@ -1,4 +1,4 @@
-package com.kurlyClone.backend;
+package com.kurlyclone.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
