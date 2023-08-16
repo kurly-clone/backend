@@ -7,7 +7,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,7 +24,6 @@ public class DeliveryAddress {
 
 	@Column(nullable = false)
 	private String address;
-	@Column(nullable = false)
-	@Builder.Default
-	private Boolean isBasic = false;
+	@Column(columnDefinition = "BOOLEAN DEFAULT false")
+	private Boolean isBasic;
 }
