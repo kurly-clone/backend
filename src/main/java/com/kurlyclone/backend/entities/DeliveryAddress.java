@@ -10,6 +10,7 @@ import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
+@SuppressWarnings("checkstyle:RegexpMultiline")
 @Entity
 @Getter
 @Setter
@@ -26,4 +27,8 @@ public class DeliveryAddress {
 	private String address;
 	@Column(columnDefinition = "BOOLEAN DEFAULT false")
 	private Boolean isBasic;
+	@Column(nullable = false)
+	private String receiverName;
+	@Column(nullable = false)
+	private String phoneNumber;
 }
