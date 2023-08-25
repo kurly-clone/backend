@@ -42,4 +42,6 @@ public class Product {
 	@Column(nullable = false)
 	@ColumnDefault("0")
 	private double discount;
+	@Column(nullable = true)
+	private String image;
 }

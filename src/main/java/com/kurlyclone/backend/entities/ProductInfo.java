@@ -27,6 +27,8 @@ public class ProductInfo {
 	private String shortDescription;
 
 	@Column(nullable = true)
+	private String image;
+	@Column(nullable = true)
 	private String packagingType;
 	@Column(nullable = true)
 	private String sellingUnit;

@@ -35,6 +35,8 @@ public class Review {
 	@Column(nullable = false)
 	@ColumnDefault("0")
 	private int helpfulCount;
+	@Column(nullable = true)
+	private String image;
 
 	@Column(nullable = false)
 	@CreationTimestamp
