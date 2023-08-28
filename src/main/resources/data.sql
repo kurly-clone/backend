@@ -198,3 +198,10 @@ INSERT INTO user(id, user_id, password, name, grade) VALUES
     (6, 'user5', 'password5', '프렌즈', '프렌즈유저'),
     (7, 'user6', 'password6', '일반', '일반유저'),
     (8, 'user7', 'password7', '웰컴', '웰컴유저');
+
+INSERT INTO search_log(id, user_id, word) VALUES
+    (1, 1, '테스트검색어1'),
+    (2, 1, '테스트검색어2'),
+    (3, 1, '테스트검색어3'),
+    (4, 1, '테스트검색어4'),
+    (5, 1, '테스트검색어5');
