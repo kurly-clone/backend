@@ -178,3 +178,23 @@ INSERT INTO sub_category VALUES
     (136, '세제•위생용품', 20),
     (137, '스킨•구강케어', 20),
     (138, '완구•잡화류', 20);
+
+INSERT INTO grade(grade, reward, performance) VALUES
+    ('관리자', 0, 0),
+    ('더퍼플', 7, 1500000),
+    ('퍼플', 7, 1000000),
+    ('라벤더', 5, 500000),
+    ('화이트', 3, 300000),
+    ('프렌즈', 1, 150000),
+    ('일반', 0.5, 0),
+    ('웰컴', 5, 0);
+
+INSERT INTO user(id, user_id, password, name, grade) VALUES
+    (1, 'admin', 'password', '관리자', '관리자'),
+    (2, 'user1', 'password1', '더퍼플', '더퍼플유저'),
+    (3, 'user2', 'password2', '퍼플', '퍼플유저'),
+    (4, 'user3', 'password3', '라벤더', '라벤더유저'),
+    (5, 'user4', 'password4', '화이트', '화이트유저'),
+    (6, 'user5', 'password5', '프렌즈', '프렌즈유저'),
+    (7, 'user6', 'password6', '일반', '일반유저'),
+    (8, 'user7', 'password7', '웰컴', '웰컴유저');
