@@ -27,8 +27,8 @@ public class DeliveryAddress {
 	private String address;
 	@Column(columnDefinition = "BOOLEAN DEFAULT false")
 	private Boolean isBasic;
-	@Column(nullable = false)
+	@Column(nullable = true)
 	private String receiverName;
-	@Column(nullable = false)
+	@Column(nullable = true)
 	private String phoneNumber;
 }
