@@ -2,7 +2,7 @@ package com.kurlyclone.backend.entities;
 
 import java.time.LocalDateTime;
 
-import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -44,14 +44,6 @@ public class OrderLog {
 	private int amount;
 
 	@Column(nullable = false)
-	@UpdateTimestamp
-	private LocalDateTime updatedAt;
-
-	public OrderStatus getStatus() {
-		return status;
-	}
-
-	public void setStatus(OrderStatus status) {
-		this.status = status;
-	}
+	@CreationTimestamp
+	private LocalDateTime createdAt;
 }
