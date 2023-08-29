@@ -30,18 +30,20 @@ public class Product {
 	private SubCategory subCategoryId;
 
 	@Column(nullable = false)
+	@ColumnDefault("'샛별배송'")
 	private String deliveryType;
 	@Column(nullable = false)
+	@ColumnDefault("'냉장'")
 	private String storageType;
 
-	@Column(nullable = false)
+	@Column(nullable = true)
 	private String brand;
 	@Column(nullable = false)
 	@ColumnDefault("0")
 	private double price;
 	@Column(nullable = false)
 	@ColumnDefault("0")
-	private double discount;
+	private double discount_price;
 	@Column(nullable = true)
 	private String image;
 }
