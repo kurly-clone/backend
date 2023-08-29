@@ -2,6 +2,7 @@ package com.kurlyclone.backend.entities;
 
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Column;
@@ -34,5 +35,6 @@ public class RewardLog {
 
 	@Column(nullable = false)
 	@CreationTimestamp
+	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 }

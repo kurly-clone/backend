@@ -35,8 +35,10 @@ public class SearchLog {
 
 	@Column(nullable = false)
 	@CreationTimestamp
+	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 	@Column(nullable = false)
 	@UpdateTimestamp
+	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime updatedAt;
 }
