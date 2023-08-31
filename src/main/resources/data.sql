@@ -179,6 +179,26 @@ INSERT INTO sub_category VALUES
     (137, '스킨•구강케어', 20),
     (138, '완구•잡화류', 20);
 
+INSERT INTO product(id, name, main_category_id, sub_category_id, brand, price, discount_price, image_url) VALUES
+    (1, '친환경 당근 500g', 1, 1, NULL, 4990, 4990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1653037915850l0.jpeg'),
+    (2, '친환경 시금치 200g', 1, 1, NULL, 6990, 6990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1653038188464l0.jpeg'),
+    (3, '친환경 유러피안 샐러드 130g', 1, 1, '팜에이트', 4290, 4290, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1575526922728l0.jpg'),
+    (4, '무농약 숙주나물 200g', 1, 1, '김구원선생', 1990, 1990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1566806395975l0.jpg'),
+    (5, '친환경 감자 600g', 1, 1, NULL, 3490, 2990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1653038027985l0.jpeg'),
+    (6, '국산콩 친환경 콩나물 400g', 1, 1, 'CJ', 2990, 2990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1657263286354l0.jpg'),
+    (7, '흙당근 1kg', 1, 2, NULL, 4990, 4990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1583480091169l0.jpg'),
+    (8, 'GAP 밀양 깻잎 30g', 1, 3, 'KF365', 1290, 1290, 'https://product-image.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/product/image/5dc12638-ebdb-4e48-b794-41a9c6fb1c0c.jpg'),
+    (9, '파프리카 2입', 1, 4, 'KF365', 3490, 3490, 'https://product-image.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/product/image/29aa7f5d-da54-4956-8355-8072d1ae661e.jpg'),
+    (10, '깐대파 500g', 1, 5, NULL, 2990, 2990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1653037895339l0.jpeg'),
+    (11, '유기농 미니 단호박 1입', 1, 6, NULL, 4290, 4070, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1656997086361l0.jpg'),
+    (12, '친환경 다진 마늘 180g', 1, 7, NULL, 4250, 4030, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1618376704252l0.jpg'),
+    (13, '팽이버섯 2입', 1, 8, 'KF365', 1290, 990, 'https://img-cf.kurly.com/cdn-cgi/image/width=360,height=468,quality=85/shop/data/goods/1637155265665l0.jpg');
+
+INSERT INTO product_info(id, product_id, reward, seller, short_description, image_url, detail_image_url, packaging_type, selling_unit, weight, origin, allergy, expiration_date) VALUES
+    (1, 1, false, '컬리', '베타카로틴이 풍부한 주홍빛 채소', '', '', '냉장(종이포장)', '1봉지', '500g(2~4개입)', '국내', NULL, NULL),
+    (2, 2, true, '컬리', '뽀빠이가 좋아하는 겨울 채소', '', '', '냉장(종이포장)', '1봉지', '200g', '국내', NULL, '농산물로 별도의 유통기한은 없으나 가급적 빨리 섭취를 권장드립니다.'),
+    (3, 3, true, '컬리', '4가지 특수채소를 한번에 즐길 수 있는 샐러드', '', '', '냉장(종이포장)', '1팩', '130g', '국산', NULL, '제조일로부터 3일 / 수령일 포함 최소 1일 남은 제품을 보내 드립니다.');
+
 INSERT INTO grade(grade, reward, performance) VALUES
     ('관리자', 0, 0),
     ('더퍼플', 7, 1500000),
