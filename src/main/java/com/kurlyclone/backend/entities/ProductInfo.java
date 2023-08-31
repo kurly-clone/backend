@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,9 +19,12 @@ public class ProductInfo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@OneToOne
+	@JoinColumn(name = "product_id")
+	private Product productId;
 	@Column(nullable = false)
-	@ColumnDefault("0")
-	private double reward;
+	@ColumnDefault("false")
+	private boolean reward;
 	@Column(nullable = false)
 	private String seller;
 	@Column(nullable = false)
@@ -27,7 +32,9 @@ public class ProductInfo {
 	private String shortDescription;
 
 	@Column(nullable = true)
-	private String image;
+	private String image_url;
+	@Column(nullable = true)
+	private String detail_image_url;
 	@Column(nullable = true)
 	private String packagingType;
 	@Column(nullable = true)

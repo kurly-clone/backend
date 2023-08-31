@@ -45,5 +45,5 @@ public class Product {
 	@ColumnDefault("0")
 	private double discount_price;
 	@Column(nullable = true)
-	private String image;
+	private String image_url;
 }
