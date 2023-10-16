@@ -10,7 +10,6 @@ import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
-@SuppressWarnings("checkstyle:RegexpMultiline")
 @Entity
 @Getter
 @Setter

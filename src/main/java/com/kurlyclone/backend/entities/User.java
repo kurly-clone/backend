@@ -37,9 +37,9 @@ public class User {
 	private int reward;
 
 	@Column(nullable = true)
-	private int birthYear;
+	private Integer birthYear;
 	@Column(nullable = true)
-	private char gender;
+	private Character gender;
 	@Column(nullable = true)
 	private String phoneNumber;
 	@Column(nullable = true)
